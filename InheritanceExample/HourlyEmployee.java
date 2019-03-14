@@ -47,8 +47,6 @@ public class HourlyEmployee extends Person {
 
     public String toString() {
         double wages = calculatePay();
-        String objectAsString = String.format("%s, payRate=%.2f, hoursWorked=%.1f, wages=%.2f",
-                super.toString(), payRate, hoursWorked, wages);
-        return objectAsString;
+        return super.toString() + ", payrate=" + payRate + ", hoursWorked= " + hoursWorked + ", wages= " + wages;
     }
 }

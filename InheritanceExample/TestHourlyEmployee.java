@@ -1,4 +1,4 @@
-// TestHourlyEmployee - Gerry Agnew
+// TestHourlyEmployee -John French
 
 public class TestHourlyEmployee {
 
