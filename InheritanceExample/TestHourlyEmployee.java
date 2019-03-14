@@ -1,21 +1,18 @@
 // TestHourlyEmployee - Gerry Agnew
 
-public class TestHourlyEmployee
-{
-	public static void main(String[] arg)
-   	{
-    	HourlyEmployee employee1 = new HourlyEmployee();
+public class TestHourlyEmployee {
+
+    public static void main(String[] arg) {
+        HourlyEmployee employee1 = new HourlyEmployee();
         System.out.println("employee1: " + employee1.toString());
-		System.out.println();
+        System.out.println();
 
-		HourlyEmployee emp2 =
-					new HourlyEmployee("Gerry", "Agnew", 10.00, 40);
+        HourlyEmployee emp2 = new HourlyEmployee("Gerry", "Agnew", 10.00, 40);
         System.out.println("emp2: " + emp2.toString());
-		System.out.println();
-        //
-		emp1.setNameRateHours("Mary", "Murphy", 10.0, 40);
-        System.out.println("emp1: " + emp1.toString());
-		System.out.println();
-   	}
+        System.out.println();
 
-} // TestHourlyEmployee
+        employee1.setNameRateHours("Mary", "Murphy", 10.0, 40);
+        System.out.println("emp1: " + employee1.toString());
+        System.out.println();
+    }
+}
