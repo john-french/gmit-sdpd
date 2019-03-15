@@ -1,4 +1,4 @@
-# W7L2 - Methods review
+# Methods review
 
 ## What are methods for?
 - break program into more **manageable chunks**
@@ -61,8 +61,7 @@ public static int getNumberSquared(int number) {
 }
 ```
 
--
-## Using a method Terms
+## Using a method: new jargon
 - **call** a method
     - using method in your program
 - **pass** parameters to a method
