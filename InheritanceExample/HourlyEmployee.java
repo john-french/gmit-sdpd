@@ -11,11 +11,10 @@ public class HourlyEmployee extends Person {
         this.hoursWorked = 0;
     }
 
-    public HourlyEmployee(String firstName, String lastName,
-                          double rate, double hours) {
+    public HourlyEmployee(String firstName, String lastName, double payRate, double hoursWorked) {
         super(firstName, lastName);
-        this.payRate = rate;
-        this.hoursWorked = hours;
+        this.payRate = payRate;
+        this.hoursWorked = hoursWorked;
     }
 
     public double getPayRate() {
@@ -38,15 +37,14 @@ public class HourlyEmployee extends Person {
         return (payRate * hoursWorked);
     }
 
-    public void setNameRateHours(String firstName, String lastName, double rate, double hours) {
+    public void setNameRateHours(String firstName, String lastName, double payRate, double hoursWorked) {
         setName(firstName, lastName);
-        this.payRate = rate;
-        this.hoursWorked = hours;
+        this.payRate = payRate;
+        this.hoursWorked = hoursWorked;
     }
 
     public String toString() {
         double wages = calculatePay();
-
         return super.toString() + ", payrate=" + payRate + ", hoursWorked= " + hoursWorked + ", wages= " + wages;
     }
 }
