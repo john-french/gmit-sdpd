@@ -38,8 +38,7 @@ public class HourlyEmployee extends Person {
         return (payRate * hoursWorked);
     }
 
-    public void setNameRateHours(String firstName, String lastName,
-                                 double rate, double hours) {
+    public void setNameRateHours(String firstName, String lastName, double rate, double hours) {
         setName(firstName, lastName);
         this.payRate = rate;
         this.hoursWorked = hours;
@@ -47,6 +46,7 @@ public class HourlyEmployee extends Person {
 
     public String toString() {
         double wages = calculatePay();
+
         return super.toString() + ", payrate=" + payRate + ", hoursWorked= " + hoursWorked + ", wages= " + wages;
     }
 }
