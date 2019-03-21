@@ -39,13 +39,12 @@ That's a pretty clear error message! We're only allowed to do `super(firstName, 
 ### Using attributes and methods from the superclass
 Let's say we want to add a method to `HourlyEmployee` that will allow us to set all it's attributes at once, e.g.:
 ```java
-    public HourlyEmployee(String firstName, String lastName, double payRate, double hoursWorked) {
-
+ public void setNameRateHours(String firstName, String lastName, double payRate, double hoursWorked) {
 }
 ```
 Setting the `payRate` and `hoursWorked` is straightforward, since these are attributes of the `HourlyEmployee` class:
 ```java
-    public HourlyEmployee(String firstName, String lastName, double payRate, double hoursWorked) {
+ public void setNameRateHours(String firstName, String lastName, double payRate, double hoursWorked) {
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
 } 
